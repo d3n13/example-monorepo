@@ -1,6 +1,6 @@
 FROM node:16
 
-WORKDIR /usr/src/app
+WORKDIR /var/app
 
 COPY ./package.json ./package.json
 COPY ./yarn.lock ././yarn.lock

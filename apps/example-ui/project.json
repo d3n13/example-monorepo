@@ -52,7 +52,11 @@
       "options": {
         "buildTarget": "example-ui:build",
         "hmr": true,
-        "proxyConfig": "apps/example-ui/proxy.conf.json"
+        "proxyConfig": "apps/example-ui/proxy.conf.json",
+        "host": "localhost",
+        "ssl": true,
+        "sslKey": "dockers/ui/ssl/localhost.key",
+        "sslCert": "dockers/ui/ssl/localhost.crt"
       },
       "configurations": {
         "development": {
