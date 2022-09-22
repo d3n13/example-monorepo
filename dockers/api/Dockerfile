@@ -1,9 +1,9 @@
 FROM node:16
 
-WORKDIR /var/app
+WORKDIR /var/app/api
 
 COPY ./package.json ./package.json
-COPY ./yarn.lock ././yarn.lock
+COPY ./yarn.lock ./yarn.lock
 COPY ./api ./api
 
 RUN yarn install --frozen-lockfile --check-files
