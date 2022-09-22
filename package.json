@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "build": "nx run-many --target=build --all --prod",
+    "test": "nx test",
+    "dockers:prepare": "cd ./dockers && sh ./prepare-docker-files.sh"
   },
   "private": true,
   "dependencies": {
