@@ -6,8 +6,9 @@
     "start": "nx serve",
     "build": "nx run-many --target=build --all --prod",
     "test": "nx test",
-    "dockers:deploy": "bash ./deploy.sh",
-    "dockers:stop": "cd ./dockers && docker compose stop"
+    "dockers:prepare-and-push": "bash ./prepare-and-push.sh",
+    "dockers:remote:stop": "bash ./remote-dockers-stop.sh",
+    "dockers:remote:start": "bash ./remote-dockers-start.sh"
   },
   "private": true,
   "dependencies": {
