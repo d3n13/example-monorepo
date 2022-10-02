@@ -1,18 +1,21 @@
-## Step 0: Add SSL Authority to your browser
+## Add SSL Authority to your browser
 
 If you would like to use secured (with the self-signed certificate) version of the app on localhost, add `dockers/ui/ssl/myCA.pem` as an authority to your preferred browser
 
-# Managing deploy on [localhost](http://localhost:80):
-
-## Deploy:
+## Prepare Docker files & push to remote via SSH:
 
 ```console
-yarn dockers:deploy
+yarn dockers:prepare-and-push
 ```
 
-
-## Stop:
+## Start docker compose on remote:
 
 ```console
-yarn dockers:stop
+yarn dockers:remote:start
+```
+
+## Stop docker compose on remote:
+
+```console
+yarn dockers:remote:stop
 ```
